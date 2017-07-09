@@ -22,7 +22,7 @@ Australian National University/James Cook University, Cairns -->
 
 <!--[image](images/Gayevskiy.jpg) **Dr. Velimir Gayevskiy** Translational Bioinformatics Officer, KCCG, Garvan Institute of Medical Research NSW  -->
 
-[image](images/Greenfield.jpg) <br>
+![image](images/Greenfield.jpg) <br>
 **Paul Greenfield** <br>
 Principal Experimental Scientist<br>
 CSIRO, Sydney  
@@ -37,7 +37,7 @@ The Australian National University, Canberra  -->
 
 <!--[image](images/Moncuquet.jpg) **Dr. Philippe Moncuquet** Research Project Officer, Cotton Disease Markers, CSIRO, Canberra-->
 
-[image](images/Moolhuijzen.jpg) <br>
+![image](images/Moolhuijzen.jpg) <br>
 **Dr. Paula Moolhuijzen** <br>
 Bioinformatics Analyst<br>
 Centre for Crop Disease Management, Curtin University, Perth

@@ -8,7 +8,7 @@
 
 * Nandan Deshpande (ND) - UNSW Systems Biology Initiative, Sydney
 * Paul Greenfield (PG) - CSIRO, Sydney  
-* Paula Moolhuijzen (PM) - Australian National University, Canberra
+* Paula Moolhuijzen (PM) - Curtin University, Perth
 * Katherine Champ (KC) - Bioplatforms Australia, Sydney
 
 ## Timetable

@@ -43,7 +43,7 @@
 |10:30|**Morning Tea**|
 |11:00|Introduction to the EBI Metagenomics portal (EMG) + Data Submission ||PM|
 |11:20|InterPro and GO for functional analysis||PM|
-|11:20|Functional analysis using EMG- Part 1 ||PM|
+|11:30|Functional analysis using EMG- Part 1 ||PM|
 |12:00|**Lunch**|
 |13:00|Practical: Functional analysis using EMG - Part 2 ||PM|
 |13:30|Introduction to R||ND|

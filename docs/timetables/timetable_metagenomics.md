@@ -29,7 +29,7 @@
 |14:15|Practical: 16S –Cheremin tutorial: OTUs and taxonomy assignment||PM|
 |15:30|**Afternoon Tea**|
 |16:00|Practical: 16S –Cheremin tutorial: Alpha diversity and Beta diversity|||PM
-|16:30|Q&A and day 1 wrap-up||All|
+|17:00|Q&A and day 1 wrap-up||All|
 
 
 ### Day 2 - Shotgun Metagenomics

@@ -55,7 +55,7 @@ mutate(datatype=str_to_title(datatype))
 ```
 
 !!! note "Question"
-How can we access elements in the list?
+    How can we access elements in the list?
 
 ```{r}
 attributes(results)

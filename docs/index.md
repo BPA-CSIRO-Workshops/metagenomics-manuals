@@ -1,5 +1,5 @@
 # Welcome to Introduction to Metagenomics Data Analysis
-### Maquarie University
+### Macquarie University
 ###11th - 12th July 2017
 <br>
 
@@ -39,4 +39,4 @@ This work is licensed under a Creative Commons Attribution 3.0 Unported License 
 • Your fair dealing or fair use rights, or other applicable copyright exceptions and limitations;<br>
 • The author’s moral rights;<br>
 • Rights other persons may have either in the work itself or in how the work is used, such as publicity or privacy rights.<br>
-*Notice* - For any reuse or distribution, you must make clear to others the licence terms of this work.<br>
+*Notice* - For any reuse or distribution, you must make clear to others the license terms of this work.<br>

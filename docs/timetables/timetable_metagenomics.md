@@ -50,6 +50,6 @@
 |14:00|Practical: Mining the EMG output using R||PM|
 |15:00|**Afternoon Tea**|
 |15:30|Practical: Mining the EMG output using R (cont.)||PM|
-|16:30|Accessing cloud computing||Mohammed|
+|16:30|Accessing cloud computing||Craig|
 |16:50|Q&A and workshop wrap-up||PG+All|
 |17:00|Workshop Survey|||

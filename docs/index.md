@@ -1,5 +1,5 @@
 # Welcome to Introduction to Metagenomics Data Analysis
-### Maquarie University 
+### Maquarie University
 ###11th - 12th July 2017
 <br>
 
@@ -18,9 +18,9 @@ Topics covered by this workshop include:  <br>
 This workshop will be delivered using a mixture of lectures, hands-on practical sessions, and open discussions.
 
 ## Acknowledgements
-This workshop was developed by Bioplatforms Australia, in partnership with CSIRO, and with support from the European Bioinformatics Institute (EBI), a member of the European Molecular Biology Laboratory (EMBL) in the UK. The workshop content has been maintained and updated by a network of dedicated [bioinformatics trainers] (http://www.bioplatforms.com/bioinformatics-training/) from around Australia.
+This workshop was developed by Bioplatforms Australia, in partnership with CSIRO, and with support from the European Bioinformatics Institute (EBI), a member of the European Molecular Biology Laboratory (EMBL) in the UK. The workshop content has been maintained and updated by a network of dedicated [bioinformatics trainers] (http://www.bioplatforms.com/bioinformatics-training/) from around Australia.<br>
 
-The Bioinformatics Training Platform was developed in collaboration with the Monash Bioinformatics Platform and this workshop has been hosted on Interset infrastructure.
+The Bioinformatics Training Platform was developed in collaboration with the Monash Bioinformatics Platform and this workshop has been hosted on Interset infrastructure.<br>
 
 ## Licensing
 This work is licensed under a Creative Commons Attribution 3.0 Unported License and the below text is a summary of the main terms of the full Legal Code (the full licence) available at http://creativecommons.org/licenses/by/3.0/legalcode.<br>

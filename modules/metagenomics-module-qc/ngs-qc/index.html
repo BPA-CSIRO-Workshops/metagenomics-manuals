@@ -308,8 +308,6 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
-      
-    
     
       <label class="md-nav__link md-nav__link--active" for="toc">
         Metagenomics QC
@@ -322,8 +320,6 @@
       
 <nav class="md-nav md-nav--secondary">
   
-  
-    
   
   
     <label class="md-nav__title" for="toc">Table of contents</label>
@@ -364,6 +360,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#author-information" title="Author Information" class="md-nav__link">
+    Author Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduction" title="Introduction" class="md-nav__link">
     Introduction
   </a>
@@ -384,6 +387,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#q-score-encoding-implemented-with-the-novaseq-platform" title="Q-score encoding implemented with the Novaseq platform" class="md-nav__link">
+    Q-score encoding implemented with the Novaseq platform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prepare-the-environment" title="Prepare the Environment" class="md-nav__link">
     Prepare the Environment
   </a>
@@ -395,12 +405,18 @@
     Quality Visualisation
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#good-quality-data" title="Good Quality Data" class="md-nav__link">
     Good Quality Data
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -429,13 +445,6 @@
           <li class="md-nav__item">
   <a href="#fixed-length-trimming" title="Fixed Length Trimming" class="md-nav__link">
     Fixed Length Trimming
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#removing-duplicates" title="Removing Duplicates" class="md-nav__link">
-    Removing Duplicates
   </a>
   
 </li>
@@ -569,8 +578,6 @@
 <nav class="md-nav md-nav--secondary">
   
   
-    
-  
   
     <label class="md-nav__title" for="toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
@@ -610,6 +617,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#author-information" title="Author Information" class="md-nav__link">
+    Author Information
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#introduction" title="Introduction" class="md-nav__link">
     Introduction
   </a>
@@ -630,6 +644,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#q-score-encoding-implemented-with-the-novaseq-platform" title="Q-score encoding implemented with the Novaseq platform" class="md-nav__link">
+    Q-score encoding implemented with the Novaseq platform
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#prepare-the-environment" title="Prepare the Environment" class="md-nav__link">
     Prepare the Environment
   </a>
@@ -641,12 +662,18 @@
     Quality Visualisation
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#good-quality-data" title="Good Quality Data" class="md-nav__link">
     Good Quality Data
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -679,13 +706,6 @@
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#removing-duplicates" title="Removing Duplicates" class="md-nav__link">
-    Removing Duplicates
-  </a>
-  
-</li>
-        
       </ul>
     </nav>
   
@@ -706,38 +726,42 @@
               
                 
                 
-                <h1 id="data-quality-control">Data Quality Control<a class="headerlink" href="#data-quality-control" title="Permanent link">&para;</a></h1>
-<h2 id="key-learning-outcomes">Key Learning Outcomes<a class="headerlink" href="#key-learning-outcomes" title="Permanent link">&para;</a></h2>
-<hr />
+                  <h1>Metagenomics QC</h1>
+                
+                <h2 id="key-learning-outcomes">Key Learning Outcomes<a class="headerlink" href="#key-learning-outcomes" title="Permanent link">&para;</a></h2>
 <p>After completing this practical the trainee should be able to:</p>
 <ul>
 <li>
 <p>Assess the overall quality of NGS (FastQ format) sequence reads</p>
 </li>
 <li>
-<p>Visualise the quality, and other associated matrices, of reads to decide on filters and cutoffs for cleaning up data ready for downstream analysis</p>
+<p>Visualise the quality, and other associated matrices, of reads to
+    decide on filters and cutoffs for cleaning up data ready for
+    downstream analysis</p>
 </li>
 <li>
-<p>Clean up adaptors and pre-process the sequence data for further analysis</p>
+<p>Clean up adaptors and pre-process the sequence data for further
+    analysis</p>
 </li>
 </ul>
 <h2 id="resources-youll-be-using">Resources You’ll be Using<a class="headerlink" href="#resources-youll-be-using" title="Permanent link">&para;</a></h2>
-<hr />
 <h3 id="tools-used">Tools Used<a class="headerlink" href="#tools-used" title="Permanent link">&para;</a></h3>
 <p>FastQC:<br />
 <a href="http://www.bioinformatics.babraham.ac.uk/projects/fastqc/">http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</a></p>
 <p>Skewer:<br />
 <a href="http://sourceforge.net/projects/skewer/">http://sourceforge.net/projects/skewer/</a></p>
 <p>FASTX-Toolkit:<br />
-<a href="http://hannonlab.cshl.edu/fastx_toolkit/">http://hannonlab.cshl.edu/fastx_toolkit/</a>&gt;</p>
-<p>Picard:<br />
-<a href="http://picard.sourceforge.net/">http://picard.sourceforge.net/</a></p>
+<a href="http://hannonlab.cshl.edu/fastx_toolkit/">http://hannonlab.cshl.edu/fastx_toolkit/</a></p>
 <h2 id="useful-links">Useful Links<a class="headerlink" href="#useful-links" title="Permanent link">&para;</a></h2>
+<p><a href="http://en.wikipedia.org/wiki/FASTQ_format#Encoding">FASTQ Encoding</a></p>
 <hr />
-<p>FASTQ Encoding:<br />
-<a href="http://en.wikipedia.org/wiki/FASTQ_format#Encoding">http://en.wikipedia.org/wiki/FASTQ_format#Encoding</a></p>
+<h2 id="author-information">Author Information<a class="headerlink" href="#author-information" title="Permanent link">&para;</a></h2>
+<p><em>Primary Author(s):</em>  <br />
+Sonika Tyagi <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#111;&#110;&#105;&#107;&#97;&#46;&#116;&#121;&#97;&#103;&#105;&#64;&#97;&#103;&#114;&#102;&#46;&#111;&#114;&#103;&#46;&#97;&#117;">&#115;&#111;&#110;&#105;&#107;&#97;&#46;&#116;&#121;&#97;&#103;&#105;&#64;&#97;&#103;&#114;&#102;&#46;&#111;&#114;&#103;&#46;&#97;&#117;</a> </p>
+<p><em>Contributor(s):</em>  <br />
+Nandan Deshpande <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#110;&#46;&#100;&#101;&#115;&#104;&#112;&#97;&#110;&#100;&#101;&#64;&#117;&#110;&#115;&#119;&#46;&#101;&#100;&#117;&#46;&#97;&#117;">&#110;&#46;&#100;&#101;&#115;&#104;&#112;&#97;&#110;&#100;&#101;&#64;&#117;&#110;&#115;&#119;&#46;&#101;&#100;&#117;&#46;&#97;&#117;</a></p>
+<hr />
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<hr />
 <p>Going on a blind date with your read set? For a better understanding of
 the consequences please check the data quality!</p>
 <p>For the purpose of this tutorial we are focusing only on Illumina
@@ -763,7 +787,8 @@ sequencing errors in the reads before assembly. Various k-mer based
 error correction methods exist but are beyond the scope of this
 tutorial.</p>
 <h3 id="quality-value-encoding-schema">Quality Value Encoding Schema<a class="headerlink" href="#quality-value-encoding-schema" title="Permanent link">&para;</a></h3>
-<p>In order to use a single character to encode Phred qualities, ASCII
+<p>Quality scoring calculates a set of predictors for each base call, and then uses the predictor values to look up the Q-score in a quality table. Quality tables are created to provide optimally accurate quality predictions for runs generated by a specific configuration of sequencing platform and version of chemistry [<a href="http://www.illumina.com">www.illumina.com</a>].
+In order to use a single character to encode Phred qualities, ASCII
 characters are used
 (<a href="http://shop.alterlinks.com/ascii-table/ascii-table-us.php">http://shop.alterlinks.com/ascii-table/ascii-table-us.php</a>). All ASCII
 characters have a decimal number associated with them but the first 32
@@ -772,7 +797,7 @@ Therefore, the first printable ASCII character is number 33, the
 exclamation mark (!). In Phred+33 encoded quality values the exclamation
 mark takes the Phred quality score of zero.</p>
 <p>Early Solexa (now Illumina) sequencing needed to encode negative quality
-values. Because ASCII characters $&lt;$ 33 are non-printable, using the
+values. Because ASCII characters &lt; 33 are non-printable, using the
 Phred+33 encoding was not possible. Therefore, they simply moved the
 offset from 33 to 64 thus inventing the Phred+64 encoded quality values.
 In this encoding a Phred quality of zero is denoted by the ASCII number
@@ -791,9 +816,62 @@ impossible to know if you have really good Phred+33 encoded qualities or
 really bad Phred+64 encoded qualities.</p>
 <p>For a graphical representation of the different ASCII characters used in
 the two encoding schema see:
-<a href="http://en.wikipedia.org/wiki/FASTQ_format#Encoding">http://en.wikipedia.org/wiki/FASTQ_format#Encoding</a></p>
+<a href="http://en.wikipedia.org/wiki/FASTQ_format#Encoding">http://en.wikipedia.org/wiki/FASTQ_format#Encoding</a>.</p>
+<h2 id="q-score-encoding-implemented-with-the-novaseq-platform">Q-score encoding implemented with the Novaseq platform<a class="headerlink" href="#q-score-encoding-implemented-with-the-novaseq-platform" title="Permanent link">&para;</a></h2>
+<p>In order to reduce the data footrpints Illumina has come up with a new
+method to reduce quality score resolution and optimise data storae. The new Q-score 
+encoding now follows an 8 level mapping of individual quality scores (0-40 or &gt;40) [See Table 1].
+With the new scoring scheme the original scores 20-24 may form one bin and the quality scores in that 
+bin mapped to a new value of 22. This can be thought of as simply replacing all the 
+occurrences of scores 20, 21, 23, 24 with a new score of 22 in the output sequence.
+Illumina claims that with the new Q-scoring system the reduction in the Illumina raw sequence format (.bcl) is typically &gt; 50% and the resulting sorted BAM  les are reduced by ~30%.</p>
+<table>
+<thead>
+<tr>
+<th>Quality Score Bins</th>
+<th align="center">Mapped quality scores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>N (no call)</td>
+<td align="center">N (no call)</td>
+</tr>
+<tr>
+<td>2-9</td>
+<td align="center">6</td>
+</tr>
+<tr>
+<td>10-19</td>
+<td align="center">15</td>
+</tr>
+<tr>
+<td>20-24</td>
+<td align="center">22</td>
+</tr>
+<tr>
+<td>25-29</td>
+<td align="center">27</td>
+</tr>
+<tr>
+<td>30-34</td>
+<td align="center">33</td>
+</tr>
+<tr>
+<td>35-39</td>
+<td align="center">37</td>
+</tr>
+<tr>
+<td>&gt;=40</td>
+<td align="center">40</td>
+</tr>
+<tr>
+<td>Table 1: Novaseq Q-score bins mapping</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
 <h2 id="prepare-the-environment">Prepare the Environment<a class="headerlink" href="#prepare-the-environment" title="Permanent link">&para;</a></h2>
-<hr />
 <p>To investigate sequence data quality we will demonstrate tools called
 FastQC and Skewer. FastQC will process and present the reports in a
 visual manner. Based on the results, the sequence data can be processed
@@ -802,7 +880,9 @@ be found in the QC directory on your desktop.</p>
 <p>Open the Terminal and go to the directory where the data are stored:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ls
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd
+ls
 cd qc
 pwd
 </pre></div>
@@ -816,14 +896,13 @@ command:</p>
 
 <p>Look at SYNOPSIS (Usage) and options after typing fastqc -h</p>
 <h2 id="quality-visualisation">Quality Visualisation<a class="headerlink" href="#quality-visualisation" title="Permanent link">&para;</a></h2>
-<hr />
 <p>We have a file for a good quality and bad quality statistics. FastQC
 generates results in the form of a zipped and unzipped directory for
 each input file.</p>
 <p>Execute the following command on the two files:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>fastqc -f qcdemo_R1.fastq.gz
-fastqc -f qcdemo_R2.fastq.gz
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>fastqc -f fastq qcdemo_R1.fastq.gz
+fastqc -f fastq qcdemo_R2.fastq.gz
 </pre></div>
 </td></tr></table>
 
@@ -838,125 +917,119 @@ and tables for different quality statistics. E.g.:</p>
 <table>
 <thead>
 <tr>
-<th>Filename</th>
-<th>qcdemo_R2.fastq.gz</th>
+<th>Property</th>
+<th align="center">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Filename</td>
+<td align="center">qcdemo_R2.fastq.gz</td>
+</tr>
+<tr>
 <td>File type</td>
-<td>Conventional base calls</td>
+<td align="center">Conventional base calls</td>
 </tr>
 <tr>
 <td>Encoding</td>
-<td>Sanger / Illumina 1.9</td>
+<td align="center">Sanger / Illumina 1.9</td>
 </tr>
 <tr>
 <td>Total Sequences</td>
-<td>1000000</td>
+<td align="center">1000000</td>
 </tr>
 <tr>
 <td>Filtered Sequences</td>
-<td>0</td>
+<td align="center">0</td>
 </tr>
 <tr>
 <td>Sequence length</td>
-<td>150</td>
+<td align="center">150</td>
 </tr>
 <tr>
 <td>%GC</td>
-<td>37</td>
+<td align="center">37</td>
 </tr>
 </tbody>
 </table>
-<p>FastQC Basic Statistics table</p>
-<p><img alt="tab:badexampleuntrimmed" src="../images/bad_example.png" /></p>
-<p>Per base sequence quality plot for
-<code class="codehilite">qcdemo_R2.fastq.gz</code>.</p>
-<p><img alt="Per base sequence quality plot for
-qcdemo_R2.fastq.gz" src="../images/bad_qcdemo_R2.png" /></p>
+<p>Table 2: Summary statistics for bad_example_untrimmed</p>
+<p><img alt="image" src="../images/bad_qcdemo_R2.png" /></p>
+<p>Figure 1:bad_example_untrimmed_QC_plot</p>
 <p>A Phred quality score (or Q-score) expresses an error probability. In
 particular, it serves as a convenient and compact way to communicate
-very small error probabilities. The probability that base <code class="codehilite">A</code> is wrong <code class="codehilite">P(sim A)</code> is expressed by a quality score, <code class="codehilite">Q(A)</code>, according to the
+very small error probabilities. The probability that base A is wrong
+(P(A)) is expressed by a quality score, Q(A), according to the
 relationship:</p>
-<p><code class="codehilite">Q(A) =-10 log10(P(sim A))</code></p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>Q(A) =-10 log10(P(A))
+</pre></div>
+</td></tr></table>
+
 <p>The relationship between the quality score and error probability is
 demonstrated with the following table:</p>
 <table>
 <thead>
 <tr>
-<th>Quality score</th>
-<th>Error probability</th>
-<th>Accuracy of the base call</th>
+<th>Quality score, Q(A)</th>
+<th align="center">Error probability, P(A)</th>
+<th align="left">Accuracy of base call</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>10</td>
-<td>0.1</td>
-<td>90%</td>
+<td align="center">0.1</td>
+<td align="left">90%</td>
 </tr>
 <tr>
 <td>20</td>
-<td>0.01</td>
-<td>99%</td>
+<td align="center">0.01</td>
+<td align="left">99%</td>
 </tr>
 <tr>
 <td>30</td>
-<td>0.001</td>
-<td>99.9%</td>
+<td align="center">0.001</td>
+<td align="left">99.9%</td>
 </tr>
 <tr>
 <td>40</td>
-<td>0.0001</td>
-<td>99.99%</td>
+<td align="center">0.0001</td>
+<td align="left">99.99%</td>
 </tr>
 <tr>
 <td>50</td>
-<td>0.00001</td>
-<td>99.999%</td>
+<td align="center">0.00001</td>
+<td align="left">99.999%</td>
 </tr>
 </tbody>
 </table>
-<p>Error probabilities associated with various quality (Q) values</p>
-<p>[tab:quality_error_probs]</p>
-<p><img alt="Question" src="../images/questions.png" /></p>
-<ol>
-<li>How many sequences were there in your file? What is the read length?</li>
-</ol>
-<p>This is a spoiler: {%s%}Hello World.{%ends%}</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>&gt; 1,000,000. read length=150bp
-</pre></div>
-</td></tr></table>
-
-<ol>
-<li>
-<p>Does the quality score values vary throughout the read length? (hint:
-look at the ’per base sequence quality plot’)</p>
-<blockquote>
-<p>Yes. Quality scores are dropping towards the end of the reads.</p>
-</blockquote>
-</li>
-<li>
+<p>Table 3: Quality Error Probabilities</p>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
+<p>How many sequences were there in your file? What is the read length?</p>
+</div>
+<div class="admonition success"><details><summary>Answer</summary><p>1,000,000. read length=150bp</p></details></div>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
+<p>Does the quality score values vary throughout the read length? </p>
+</div>
+<div class="admonition hint"><details><summary>Hint</summary><p>look at the ’per base sequence quality plot’</p></details></div>
+<div class="admonition success"><details><summary>Answer</summary><p>Yes. Quality scores are dropping towards the end of the reads.</p></details></div>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
 <p>What is the quality score range you see?</p>
-<blockquote>
-<p>2-40</p>
-</blockquote>
-</li>
-<li>
+</div>
+<div class="admonition success"><details><summary>Answer</summary><p>2-40</p></details></div>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
 <p>At around which position do the scores start falling below Q20 for the 25% quartile range (25%of reads below Q20)?</p>
-<blockquote>
-<p>Around 30 bp position</p>
-</blockquote>
-</li>
-<li>
+</div>
+<div class="admonition success"><details><summary>Answer</summary><p>Around 30 bp position</p></details></div>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
 <p>How can we trim the reads to filter out the low quality data?</p>
-<blockquote>
-<p>By trimming off the bases after a fixed position of the read or by trimming off bases based on the quality score.</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="good-quality-data">Good Quality Data<a class="headerlink" href="#good-quality-data" title="Permanent link">&para;</a></h2>
+</div>
+<div class="admonition success"><details><summary>Answer</summary><p>By trimming off the bases after a fixed position of the read or by trimming off bases based on the quality score.</p></details></div>
+<h3 id="good-quality-data">Good Quality Data<a class="headerlink" href="#good-quality-data" title="Permanent link">&para;</a></h3>
 <p>View the FastQC report files <code class="codehilite">fastqc_report.html</code> to see examples of a
 good quality data and compare the quality plot with that of the
 <code class="codehilite">bad_example_fastqc</code>.</p>
@@ -975,7 +1048,6 @@ be removed or corrected, the read alignments and hence the variant
 detection will improve. The assemblies will also improve after
 pre-processing the reads to remove errors.</p>
 <h2 id="read-trimming">Read Trimming<a class="headerlink" href="#read-trimming" title="Permanent link">&para;</a></h2>
-<hr />
 <p>Read trimming can be done in a variety of different ways. Choose a
 method which best suits your data. Here we are giving examples of
 fixed-length trimming and quality-based trimming.</p>
@@ -988,107 +1060,98 @@ the end. There is no adaptor contamination though. We will be using
 Skewer to perform the quality trimming.</p>
 <p>Run the following command to quality trim a set of paired end data.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nb">cd</span> ~/qc
-skewer -t <span class="m">20</span> -l <span class="m">50</span>  -q <span class="m">30</span> -Q <span class="m">25</span> -m pe qcdemo_R1.fastq.gz qcdemo_R2.fastq.gz
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd /home/trainee/qc
+skewer -t 4 -l 50  -q 30 -Q 25 -m pe -o qcdemo qcdemo_R1.fastq.gz qcdemo_R2.fastq.gz
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>-t :   number of threads to use
-
--l :   min length to keep after trimming
-
--q :   Quality threshold used for trimming at 3’ end
-
--Q :   mean quality threshold for a read
-
--m :   pair-end mode
-</pre></div>
-</td></tr></table>
-
+<p>-t
+:   number of threads to use</p>
+<p>-l
+:   min length to keep after trimming</p>
+<p>-q
+:   Quality threshold used for trimming at 3’ end</p>
+<p>-Q
+:   mean quality threshold for a read</p>
+<p>-m
+:   pair-end mode</p>
 <p>Run FastQC on the quality trimmed file and visualise the quality scores.</p>
+<p>Look at the last files generated, are the file names same as the input ?</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>ls -ltr
+</pre></div>
+</td></tr></table>
+
+<p>Run Fastqc on the quality trimmed files:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>fastqc -f fastq qcdemo_R1.fastq-trimmed-pair1.fastq
-fastqc -f fastq qcdemo_R1.fastq-trimmed-pair2.fastq
-firefox qcdemo_R1.fastq-trimmed-pair1_fastqc.html &amp;
-firefox qcdemo_R1.fastq-trimmed-pair2_fastqc.html&amp;
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>fastqc -f fastq qcdemo-trimmed-pair1.fastq
+fastqc -f fastq qcdemo-trimmed-pair2.fastq
+</pre></div>
+</td></tr></table>
+
+<p>Visualise the fastqc results:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>firefox qcdemo-trimmed-pair1_fastqc.html &amp;
+firefox qcdemo-trimmed-pair2_fastqc.html &amp;
 </pre></div>
 </td></tr></table>
 
 <p>Let’s look at the quality from the second reads. The output should look
 like:</p>
-<p><strong>FastQC Basic Statistics table</strong></p>
 <table>
 <thead>
 <tr>
-<th>Filename</th>
-<th>qcdemo_R1.fastq-trimmed-pair2.fastq</th>
+<th>Property</th>
+<th align="center">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Filename</td>
+<td align="center">qcdemo-trimmed-pair2.fastq</td>
+</tr>
+<tr>
 <td>File type</td>
-<td>Conventional base calls</td>
+<td align="center">Conventional base calls</td>
 </tr>
 <tr>
 <td>Encoding</td>
-<td>Sanger / Illumina 1.9</td>
+<td align="center">Sanger / Illumina 1.9</td>
 </tr>
 <tr>
 <td>Total Sequences</td>
-<td>742262</td>
+<td align="center">742262</td>
 </tr>
 <tr>
 <td>Filtered Sequences</td>
-<td>0</td>
+<td align="center">0</td>
 </tr>
 <tr>
 <td>Sequence length</td>
-<td>50</td>
+<td align="center">50-150</td>
 </tr>
 <tr>
 <td>%GC</td>
-<td>37</td>
+<td align="center">37</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Per base sequence quality plot for the quality-trimmed</strong>
-<code class="codehilite">qcdemo_R2.fastq.gz</code></p>
-<p><img alt="" src="../images/bad_qcdemo_R2_quality_trimmed.png" /></p>
-<p><img alt="Question" src="../images/questions.png" /></p>
-<ol>
-<li>Did the number of total reads in R1 and R2 change after trimming?</li>
-</ol>
-<blockquote>
-<p>Quality trimming discarded &gt;1000 reads. However, We retain a lot of maximal length reads which have good quality all the way to the ends.</p>
-</blockquote>
-<ol>
-<li>What reads lengths were obtained after quality based trimming?</li>
-</ol>
-<blockquote>
-<p>50-150 Reads &lt;50 bp, following quality trimming, were discarded.</p>
-</blockquote>
-<ol>
-<li>Did you observe adapter sequences in the data?</li>
-</ol>
-<blockquote>
-<p>No. (Hint: look at the overrepresented sequences.</p>
-</blockquote>
-<ol>
-<li>How can you use -a option with fastqc ? (Hint: try fastqc -h).</li>
-</ol>
-<blockquote>
-<p>Adaptors can be supplied in a file for screening.</p>
-</blockquote>
+<p>Table 4:Summary Statistics of QC_demo_R1_trimmed</p>
+<p><img alt="image" src="../images/bad_qcdemo_R2_quality_trimmed.png" /></p>
+<p>Figure 2:bad_example_quality_trimmed_plot</p>
+<p>Did the number of total reads in R1 and R2 change after trimming?</p>
+<p>Quality trimming discarded &gt;25000 reads. However, We retain a lot of
+maximal length reads which have good quality all the way to the ends.</p>
+<p>What reads lengths were obtained after quality based trimming?</p>
+<p>50-150</p>
+<p>Reads &lt;50 bp, following quality trimming, were discarded.</p>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
+<p>Did you observe adapter sequences in the data?</p>
+<details><summary>Answer</summary><p>No. (Hint: look at the overrepresented sequences)    </p></details></div>
+<div class="admonition note">
+<p class="admonition-title">Question</p>
+<p>How can you use -a option with fastqc? (Hint: try fastqc -h).</p>
+<details><summary>Answer</summary><p>Adaptors can be supplied in a file for screening.</p></details></div>
 <h3 id="adapter-clipping">Adapter Clipping<a class="headerlink" href="#adapter-clipping" title="Permanent link">&para;</a></h3>
 <p>Sometimes sequence reads may end up getting the leftover of adapters and
 primers used in the sequencing process. It’s good practice to screen
@@ -1100,56 +1163,42 @@ molecules being sequenced. For example when sequencing miRNAs.</p>
 adapter/primer sequences from your data. Apart from skewer which will be
 using today the following two tools are also useful for trimming and
 removing adapter sequence.</p>
-<p>Cutadapt: (<a href="http://code.google.com/p/cutadapt/">http://code.google.com/p/cutadapt/</a>)
-Trimmomatic:
-(<a href="http://www.usadellab.org/cms/?page=trimmomatic">http://www.usadellab.org/cms/?page=trimmomatic</a>)</p>
+<p>Cutadapt <a href="http://code.google.com/p/cutadapt/">http://code.google.com/p/cutadapt/</a></p>
+<p>Trimmomatic <a href="http://www.usadellab.org/cms/?page=trimmomatic">http://www.usadellab.org/cms/?page=trimmomatic</a></p>
 <p>Here we are demonstrating <code class="codehilite">Skewer</code> to trim a given adapter sequence.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
-3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd ~/qc
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd /home/trainee/qc
 fastqc -f fastq  adaptorQC.fastq.gz
+firefox adaptorQC_fastqc.html
 skewer -x TGGAATTCTCGGGTGCCAAGGT -t 20 -l 10 -L 35 -q 30 adaptorQC.fastq.gz
 </pre></div>
 </td></tr></table>
 
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>-x :   adaptor sequence used
-
--t :   number of threads to use
-
--l :   min length to keep after trimming
-
--L :   Max length to keep after trimming, in this experiment we were
-    expecting only small RNA fragments
-
--Q :   Quality threshold used for trimming at 3’ end. Use -m option to
-    control the end you want to trim
-</pre></div>
-</td></tr></table>
-
+<p>-x
+:   adaptor sequence used</p>
+<p>-t
+:   number of threads to use</p>
+<p>-l
+:   min length to keep after trimming</p>
+<p>-L
+:   Max length to keep after trimming, in this experiment we were
+    expecting only small RNA fragments</p>
+<p>-Q
+:   Quality threshold used for trimming at 3’ end. Use -m option to
+    control the end you want to trim</p>
 <p>Run FastQC on the adapter trimmed file and visualise the quality scores.
 Fastqc now shows adaptor free results.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>fastqc -f fastq adaptorQC.fastq-trimmed.fastq
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>fastqc adaptorQC.fastq-trimmed.fastq
 firefox adaptorQC.fastq-trimmed_fastqc.html &amp;
 </pre></div>
 </td></tr></table>
 
-<p>An alternative tool, not installed on this system, for adapter clipping
-is <code class="codehilite">fastq-mcf</code>. A list of adapters is provided in a text file. For more
-information, see FastqMcf at
-<a href="http://code.google.com/p/ea-utils/wiki/FastqMcf">http://code.google.com/p/ea-utils/wiki/FastqMcf</a>.</p>
 <h3 id="fixed-length-trimming">Fixed Length Trimming<a class="headerlink" href="#fixed-length-trimming" title="Permanent link">&para;</a></h3>
-<p><strong>We will not cover Fixed Length Trimming but provide the following for your information.</strong> Low quality read ends can be trimmed using a
+<p><strong>We will not cover Fixed Length Trimming but provide the following for
+your information.</strong> Low quality read ends can be trimmed using a
 fixed-length trimming. We will use the <code class="codehilite">fastx_trimmer</code> from the
 FASTX-Toolkit. Usage message to find out various options you can use
 with this tool. Type <code class="codehilite">fastx_trimmer -h</code> at anytime to display help.</p>
@@ -1159,33 +1208,24 @@ not cd back in.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
-4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd ~/qc
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd /home/trainee/qc
 fastqc -f fastq bad_example.fastq
 fastx_trimmer -h
 fastx_trimmer -Q 33 -f 1 -l 80 -i bad_example.fastq -o bad_example_trimmed01.fastq
 </pre></div>
 </td></tr></table>
 
-<p>We used the following options in the command above:
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>-Q 33 :   Indicates the input quality scores are Phred+33 encoded
-
--f :   First base to be retained in the output
-
--l :   Last base to be retained in the output
-
--i :   Input FASTQ file name
-
--o :   Output file name
-</pre></div>
-</td></tr></table></p>
+<p>We used the following options in the command above:</p>
+<p>-Q 33
+:   Indicates the input quality scores are Phred+33 encoded</p>
+<p>-f
+:   First base to be retained in the output</p>
+<p>-l
+:   Last base to be retained in the output</p>
+<p>-i
+:   Input FASTQ file name</p>
+<p>-o
+:   Output file name</p>
 <p>Run FastQC on the trimmed file and visualise the quality scores of the
 trimmed file.</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -1198,81 +1238,47 @@ firefox bad_example_trimmed01_fastqc.html &amp;
 <table>
 <thead>
 <tr>
-<th>Filename</th>
-<th>bad_example_trimmed01.fastq</th>
+<th>Property</th>
+<th align="center">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>Filename</td>
+<td align="center">bad_example_trimmed01.fastq</td>
+</tr>
+<tr>
 <td>File type</td>
-<td>Conventional base call</td>
+<td align="center">Conventional base calls</td>
 </tr>
 <tr>
 <td>Encoding</td>
-<td>Sanger / Illumina 1.9</td>
+<td align="center">Sanger / Illumina 1.9</td>
 </tr>
 <tr>
 <td>Total Sequences</td>
-<td>40000</td>
+<td align="center">40000</td>
 </tr>
 <tr>
 <td>Filtered Sequences</td>
-<td>0</td>
+<td align="center">0</td>
 </tr>
 <tr>
 <td>Sequence length</td>
-<td>80</td>
+<td align="center">80</td>
 </tr>
 <tr>
 <td>%GC</td>
-<td>48</td>
+<td align="center">48</td>
 </tr>
 </tbody>
 </table>
-<p>: FastQC Basic Statistics table</p>
-<p>
-<script type="math/tex; mode=display">tab:badexampletrimmed</script>
-</p>
-<p>![Per base sequence quality plot for the fixed-length trimmed
-<code class="codehilite">bad_example.fastq</code>
-<img alt="Per base sequence quality plot for the fixed-length trimmed" src="../images/bad_example_trimmed_to_80bp.png" /></p>
+<p>Table 5:Summary Statistics of bad_example_trimmed summary </p>
+<p><img alt="image" src="../images/bad_example_trimmed_to_80bp.png" title="reaaaaaa" /></p>
+<p>Figure 3: bad_example_trimmed_plot</p>
 <p>What values would you use for <code class="codehilite">-f</code> if you wanted to trim off 10 bases at
 the 5’ end of the reads?</p>
 <p><code class="codehilite">-f 11</code></p>
-<h3 id="removing-duplicates">Removing Duplicates<a class="headerlink" href="#removing-duplicates" title="Permanent link">&para;</a></h3>
-<p>Duplicate reads are the ones having the same start and end coordinates.
-This may be the result of technical duplication (too many PCR cycles),
-or over-sequencing (very high fold coverage). It is very important to
-put the duplication level in context of your experiment. For example,
-duplication level in targeted or re-sequencing projects may mean
-something different in RNA-seq experiments. In RNA-seq experiments
-oversequencing is usually necessary when detecting low abundance
-transcripts.</p>
-<p>The duplication level computed by FastQC is based on sequence identity
-at the end of reads. Another tool, Picard, determines duplicates based
-on identical start and end positions in SAM/BAM alignment files.</p>
-<p><strong>We will not cover Picard but provide the following for your
-information.</strong></p>
-<p>Picard is a suite of tools for performing many common tasks with SAM/BAM
-format files. For more information see the Picard website and
-information about the various command-line tools available:</p>
-<p><a href="http://picard.sourceforge.net/command-line-overview.shtml">http://picard.sourceforge.net/command-line-overview.shtml</a></p>
-<p>A good list of tools for filtering PCR duplication can also be found at
-<a href="http://omictools.com/duplicate-reads-removal-c495-p1.html">http://omictools.com/duplicate-reads-removal-c495-p1.html</a></p>
-<p>Picard is installed on this system in <code class="codehilite">/usr/share/java</code></p>
-<p>One of the Picard tools (MarkDuplicates) can be used to analyse and
-remove duplicates from the raw sequence data. The input for Picard is a
-sorted alignment file in BAM format. Short read aligners such as,
-bowtie, BWA and tophat can be used to align FASTQ files against a
-reference genome to generate SAM/BAM alignment format.</p>
-<p>Interested users can use the following general command to run the
-MarkDuplicates tool at their leisure. You only need to provide a BAM
-file for the INPUT argument (not provided):</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>cd ~/qc
-java -jar /usr/share/java/MarkDuplicates.jar INPUT=&lt;alignment_file.bam&gt; VALIDATION_STRINGENCY=LENIENT OUTPUT=alignment_file.dup METRICS_FILE=alignment_file.matric ASSUME_SORTED=true REMOVE_DUPLICATES=true
-</pre></div>
-</td></tr></table>
                 
                   
                 
